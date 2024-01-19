@@ -1,0 +1,6 @@
+*
+!*/
+!.gitignore
+
+# whitelist NO-L20240119100338381
+!kmath/literature-notes/NO-L20240119100338381.top-level-view-of-computer-function-and-interconnection.md
