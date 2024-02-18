@@ -3,6 +3,7 @@ id: NO-Q20240218234754772
 aliases: []
 ---
 Use MOV for registers that need exact values, LEA for offset ones
+
 Always MOV the function number to AH
 
 Template:
