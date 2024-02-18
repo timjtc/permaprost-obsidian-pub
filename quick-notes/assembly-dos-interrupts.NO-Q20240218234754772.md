@@ -91,36 +91,54 @@ AL = video mode
 | 03h | Text | Color | 80x25 |
 
 Shorthand for clearing the screen:
-`mov ah, 0`
-`mov al, 03h`
-`int 10h`
+```
+mov ah, 0
+mov al, 03h
+int 10h
+```
 or
-`mov ax, 0003h`
-`int 10h`
+```
+mov ax, 0003h
+int 10h
+```
 ## Function 2 – set cursor position
 
 BH = page number
+
 DH = row
+
 DL = column
 ## Function 9 – write character with attribute and repetition
 
 AL = character to write
+
 BH = page number
+
 BL = attribute
+
 CX = number of times to print character
 ## Function 0Ah – write character with repetition
 
 AL = character to write
+
 BH = page number
+
 CX = number of times to print character
 ## Function 13h – write string with attribute
 
 AL = write mode (default is 01h)
-BH = page number
-BL = attribute
-CX = number of characters in string
-DH = row
-DL = column
-(ES:BP) = offset of string
 
+BH = page number
+
+BL = attribute
+
+CX = number of characters in string
+
+DH = row
+
+DL = column
+
+(ES:BP) = offset of string
 # Interrupt 20h - terminate program
+
+Terminates execution of the program without returning status code.
