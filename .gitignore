@@ -4,4 +4,5 @@ _metapermaprost/*/
 !.gitignore
 
 # whitelist NO-L20240119100338381
-!kmath/literature-notes/NO-L20240119100338381.top-level-view-of-computer-function-and-interconnection.md
+!kmath/literature-notes/top-level-view-of-computer-function-and-interconnection.NO-L20240119100338381.md
+!quick-notes/assembly-dos-interrupts.NO-Q20240218234754772.md
