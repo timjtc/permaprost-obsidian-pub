@@ -12,6 +12,11 @@ cseg segment para 'code'
 assume cs:cseg, ds:cseg, es:cseg, ss:cseg
 org 100h
 
+; data declaration
+; =======================
+
+; =======================
+
 start:
 ; assembly codes here
 
@@ -24,11 +29,6 @@ int 20h
 
 ; =======================
 
-; data declaration
-; =======================
-
-; =======================
-
 cseg ends
 end start
 ```
@@ -36,14 +36,14 @@ end start
 
 ASCII control characters:
 
-| Hex | Dec | Description |
-| ---- | ---- | ---- |
-| 08h | 8 | Backspace (moves one column to the left) |
-| 09h | 9 | Horizontal tab (skips forward n columns) |
-| 0Ah | 10 | Line feed (moves to next output line) |
-| 0Ch | 12 | Form feed (moves to next printer page) |
-| 0Dh | 13 | Carriage return (moves to leftmost output column) |
-| 1Bh | 27 | Escape character |
+| Hex | Dec | Description                                       |
+| --- | --- | ------------------------------------------------- |
+| 08h | 8   | Backspace (moves one column to the left)          |
+| 09h | 9   | Horizontal tab (skips forward n columns)          |
+| 0Ah | 10  | Line feed (moves to next output line)             |
+| 0Ch | 12  | Form feed (moves to next printer page)            |
+| 0Dh | 13  | Carriage return (moves to leftmost output column) |
+| 1Bh | 27  | Escape character                                  |
 ## Function 1 - wait for key press
 
 (no register)
